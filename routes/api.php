@@ -19,7 +19,7 @@ Route::get('olamundo/{name}', function($name) {
 
 });
 
-Route::post('ola-post', 'BarbeariasController@olapost');
+Route::post('ola-post', 'BarbeariasController@ola');
 
 
 
