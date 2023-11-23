@@ -50,6 +50,9 @@ class BarberController extends Controller
 
     }
 
-
+    public function show(Request $request){
+        $barbearias = Barbearia::findorfail($request->id);
+        return response()->json($barbearias);
+    }
 
 }
