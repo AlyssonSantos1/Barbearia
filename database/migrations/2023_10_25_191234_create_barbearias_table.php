@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('barbearias', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('nome');
+            $table->float('preco');
         });
     }
 
