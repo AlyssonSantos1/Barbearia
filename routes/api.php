@@ -20,6 +20,7 @@ Route::get('/', [BarberController::class, 'getall']);
 Route::post('/adicionarservico', [BarberController::class, 'create']);
 Route::put('/atualizarservico/{id}',[BarberController::class, 'update']);
 Route::get('/excluirservico/{id}',[BarberController::class, 'destroy']);
+Route::get('/mostrarservico/{id}',[BarberController::class, 'show']);
 
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
